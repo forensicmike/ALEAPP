@@ -12,6 +12,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
+    - name: Setup Python v3.9.1
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.1'
 
     - name: Package ALEAPP
       uses: JackMcKew/pyinstaller-action-windows@main
